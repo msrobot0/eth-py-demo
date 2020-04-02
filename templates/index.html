@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Demo - Intention</title>
+      <style>
+        body { margin-left:50px; margin-top:100px; background:black; color: white;
+          font-family:"Lucida Console", Courier, monospace;}
+        .btn{
+          background:none;
+          border:none;
+          font-size:1em;
+          color:#41FF00;
+          margin:0px;
+        }
+        .txt{
+          resize: none;
+          background: none;
+          color: white;
+          border: 1px dotted white;
+        }
+      </style>
+    </head>
+    <body>
+        <p>What is your intention?</p>
+        <form method="/post" action="/intention">
+          <textarea rows=5 cols=40 class="txt" name="intention"></textarea>
+          <p>
+          <input class="btn" type="submit" value="create intention">
+          </p>
+        </form>
+    </body>
+</html>
